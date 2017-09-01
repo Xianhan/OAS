@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+<STYLE type=text/css> 
+{
+	FONT-SIZE: 12px;
+}
+/*最外部div用来定位，以保证显示全部内容 id="box"*/
+#box{
+	/*用来定位*/
+	background-image:url(../images/bg_main.jpg) ;
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:1030px;
+	height:585px;
+	font-family:"微软雅黑";
+}
+/*内容div用来居中 id="pos"*/
+#pos{
+	background-color:rgba(255,255,255,0.6) ;
+	position: relative;
+	top: 10%;
+	width: 52%;
+	height: 50%;
+	margin:0px auto;
+}
+/*整个table表命名为class="tab"*/
+.tab {
+	position: relative;
+	left: 0px;
+	BORDER: #bad6ec 1px;
+	COLOR:black;
+	font-family:"微软雅黑";
+	FONT-SIZE: 16px;
+	WIDTH: 100%;
+	BORDER-COLLAPSE: collapse;
+}
+/*第一行td格式命名为：class="first"*/
+.first {
+	
+	/*漂亮的单元格浅色背景*/
+	/*BACKGROUND-IMAGE: url("../images/bg_th.gif");*/
+	LINE-HEIGHT: 27px;
+	TEXT-ALIGN: center;
+}
+/*其余td格式命名为：class="td"*/
+.td {
+	
+	LINE-HEIGHT: 32px;
+	TEXT-ALIGN: center;
+}
+/*超链接格式 命名为:class="link"*/
+.link {
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	
+	OVERFLOW: hidden;
+	BORDER-LEFT: 0px;
+	WIDTH: 67px; COLOR: #364c6d;
+	LINE-HEIGHT: 27px;
+	BORDER-BOTTOM: 0px;
+	BACKGROUND-REPEAT: repeat-x;
+	HEIGHT: 27px;
+	BACKGROUND-COLOR: transparent; 
+	TEXT-DECORATION: none;
+}
+/*input的样式*/
+.inp{
+	line-height:24px;
+	font-size:16px;
+	width:150px;
+	text-align:center;
+}
+
+/*表的题目*/
+#head{
+	font-size:20px;
+	font-famliy:"微软雅黑";
+}
+/* 按钮（提交）的格式*/
+#sub{
+	width:90px;
+	height:36px;
+	font-size:16px;
+}
+/*div包括按钮，控制按钮位置*/
+#subbox{
+	width:20%;
+	margin:10px auto;
+}
+
+
+</STYLE>

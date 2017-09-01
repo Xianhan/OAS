@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<Resource name="jdbc/OAS"
+auth="Container"
+type="javax.sql.DataSource"
+username="db_neuq"
+password="pwd"
+url="jdbc:oracle:thin:@localhost:1521:ORAC"
+driverClassName="oracle.jdbc.driver.OracleDriver"
+maxIdle="2"
+maxWait="5000"
+maxActive="4"
+/>
+</Context>

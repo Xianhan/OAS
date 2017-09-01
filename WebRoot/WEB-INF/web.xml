@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>OAS</display-name>
+<!--   <filter>
+  	<filter-name>SafeFilter</filter-name>
+  	<filter-class>com.neuq.services.SafeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>SafeFilter</filter-name>
+  	<url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+ -->
+  <servlet>
+        <servlet-name>NumUnreadMessages</servlet-name>
+        <servlet-class>com.neuq.services.NumUnreadMessages</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NumUnreadMessages</servlet-name>
+        <url-pattern>/NumUnreadMessages</url-pattern>
+        <url-pattern>/admin/NumUnreadMessages</url-pattern>
+    </servlet-mapping>
+<servlet>
+	<servlet-name>Upload</servlet-name>
+  	<servlet-class>com.neuq.services.Upload</servlet-class>
+  	  </servlet>
+  	    <servlet-mapping>
+    <servlet-name>Upload</servlet-name>
+    <url-pattern>/Upload</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>EmpCheckSal</servlet-name>
+  	<servlet-class>com.neuq.services.EmpCheckSal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>EmpCheckSal</servlet-name>
+  <url-pattern>/EmpCheckSal</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddSal</servlet-name>
+    <servlet-class>com.neuq.services.AddSal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddSal</servlet-name>
+    <url-pattern>/AddSal</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>InsertSal</servlet-name>
+    <servlet-class>com.neuq.services.InsertSal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertSal</servlet-name>
+    <url-pattern>/InsertSal</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AlterSal</servlet-name>
+    <servlet-class>com.neuq.services.AlterSal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AlterSal</servlet-name>
+    <url-pattern>/Alter</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LinkAlter</servlet-name>
+    <servlet-class>com.neuq.services.LinkAlter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LinkAlter</servlet-name>
+    <url-pattern>/LinkAlter</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateSave</servlet-name>
+    <servlet-class>com.neuq.services.UpdateSave</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateSave</servlet-name>
+    <url-pattern>/UpdateSave</url-pattern>
+  </servlet-mapping>
+  
+
+
+<servlet>
+    <servlet-name>GetAnnouncement</servlet-name>
+    <servlet-class>com.neuq.services.GetAnnouncement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetAnnouncement</servlet-name>
+    <url-pattern>/GetAnnouncement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteAnnouncement</servlet-name>
+    <servlet-class>com.neuq.services.DeleteAnnouncement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAnnouncement</servlet-name>
+    <url-pattern>/DeleteAnnouncement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateAnnouncement</servlet-name>
+    <servlet-class>com.neuq.services.UpdateAnnouncement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateAnnouncement</servlet-name>
+    <url-pattern>/UpdateAnnouncement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddAnnouncement</servlet-name>
+    <servlet-class>com.neuq.services.AddAnnouncement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddAnnouncement</servlet-name>
+    <url-pattern>/AddAnnouncement</url-pattern>
+  </servlet-mapping>
+    <servlet>
+        <servlet-name>AnnouncementContent</servlet-name>
+        <servlet-class>com.neuq.services.AnnouncementContent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AnnouncementContent</servlet-name>
+        <url-pattern>/AnnouncementContent</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+    <servlet-name>ScheduleDetailAction</servlet-name>
+    <servlet-class>com.neuq.services.ScheduleDetailAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ScheduleDetailAction</servlet-name>
+    <url-pattern>/ScheduleDetailAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+    <servlet-name>UpdateSelectScheduleAction</servlet-name>
+    <servlet-class>com.neuq.services.UpdateSelectScheduleAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateSelectScheduleAction</servlet-name>
+    <url-pattern>/UpdateSelectScheduleAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SaveUpdateScheduleAction</servlet-name>
+    <servlet-class>com.neuq.services.SaveUpdateScheduleAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveUpdateScheduleAction</servlet-name>
+    <url-pattern>/SaveUpdateScheduleAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DelScheduleAction</servlet-name>
+    <servlet-class>com.neuq.services.DelScheduleAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelScheduleAction</servlet-name>
+    <url-pattern>/DelScheduleAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SelectScheduleAction</servlet-name>
+    <servlet-class>com.neuq.services.SelectScheduleAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectScheduleAction</servlet-name>
+    <url-pattern>/SelectScheduleAction</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>ContactListAction</servlet-name>
+    <servlet-class>com.neuq.services.ContactListAction</servlet-class>
+    </servlet>
+   <servlet>
+    <servlet-name>SelectContactListAction</servlet-name>
+    <servlet-class>com.neuq.services.SelectContactListAction</servlet-class>
+    </servlet>
+ 
+ <servlet>
+    <servlet-name>queryApply</servlet-name>
+    <servlet-class>com.neuq.services.QueryAffairs</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>checkApply</servlet-name>
+    <servlet-class>com.neuq.services.CheckAffairs</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.neuq.services.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowAllWorker</servlet-name>
+    <servlet-class>com.neuq.services.ShowAllWorker</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WorkerDetail</servlet-name>
+    <servlet-class>com.neuq.services.WorkerDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterWorker</servlet-name>
+    <servlet-class>com.neuq.services.AlterWorker</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddWorker</servlet-name>
+    <servlet-class>com.neuq.services.AddWorker</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdatePwd</servlet-name>
+    <servlet-class>com.neuq.services.UpdatePwd</servlet-class>
+  </servlet>
+
+<!-- 领导查询申请表的servlet配置 -->
+  <servlet>
+    <servlet-name>managerQueryAffairs</servlet-name>
+    <servlet-class>com.neuq.services.ManagerQueryAffairs</servlet-class>
+  </servlet>
+<!-- 领导修改状态 -->
+  <servlet>
+    <servlet-name>managerCheckAffairs</servlet-name>
+    <servlet-class>com.neuq.services.ManagerCheckAffairs</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>GetMessagesList</servlet-name>
+    <servlet-class>com.neuq.services.GetMessagesList</servlet-class>
+  </servlet>
+  <servlet>
+        <servlet-name>DeleteMessages</servlet-name>
+        <servlet-class>com.neuq.services.DeleteMessages</servlet-class>
+    </servlet>
+  <servlet>
+    <servlet-name>SendMessages</servlet-name>
+    <servlet-class>com.neuq.services.SendMessages</servlet-class>
+  </servlet>
+   <servlet>
+        <servlet-name>IsReadMessages</servlet-name>
+        <servlet-class>com.neuq.services.IsReadMessages</servlet-class>
+    </servlet>
+
+  <servlet>
+    <servlet-name>Sign</servlet-name>
+    <servlet-class>com.neuq.services.Sign</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SignOnDetail</servlet-name>
+    <servlet-class>com.neuq.services.SignOnDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AllSignOnAction</servlet-name>
+    <servlet-class>com.neuq.services.AllSignOnAction</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownLoad</servlet-name>
+    <servlet-class>com.neuq.services.DownLoad</servlet-class>
+  </servlet>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+    <servlet-mapping>
+    <servlet-name>IsReadMessages</servlet-name>
+    <url-pattern>/IsReadMessages</url-pattern>
+  </servlet-mapping>
+   
+  
+  
+  <servlet-mapping>
+    <servlet-name>SendMessages</servlet-name>
+    <url-pattern>/SendMessages</url-pattern>
+  </servlet-mapping>
+   
+	 <servlet-mapping>
+    <servlet-name>GetMessagesList</servlet-name>
+    <url-pattern>/GetMessagesList</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteMessages</servlet-name>
+        <url-pattern>/DeleteMessages</url-pattern>
+    </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>checkApply</servlet-name>
+    <url-pattern>/checkApply</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowAllWorker</servlet-name>
+    <url-pattern>/ShowAllWorker</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WorkerDetail</servlet-name>
+    <url-pattern>/WorkerDetail</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>queryApply</servlet-name>
+    <url-pattern>/queryApply</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterWorker</servlet-name>
+    <url-pattern>/AlterWorker</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddWorker</servlet-name>
+    <url-pattern>/AddWorker</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>SelectContactListAction</servlet-name>
+    <url-pattern>/SelectContactListAction</url-pattern>
+  </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>ContactListAction</servlet-name>
+    <url-pattern>/ContactListAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePwd</servlet-name>
+    <url-pattern>/UpdatePwd</url-pattern>
+  </servlet-mapping>
+ 
+
+  
+  <servlet-mapping>
+    <servlet-name>managerQueryAffairs</servlet-name>
+    <url-pattern>/managerQueryAffairs</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>managerCheckAffairs</servlet-name>
+    <url-pattern>/managerCheckAffairs</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Sign</servlet-name>
+    <url-pattern>/Sign</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignOnDetail</servlet-name>
+    <url-pattern>/SignOnDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllSignOnAction</servlet-name>
+    <url-pattern>/AllSignOnAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownLoad</servlet-name>
+    <url-pattern>/DownLoad</url-pattern>
+  </servlet-mapping> 
+   <servlet>
+        <servlet-name>WorkerExsit</servlet-name>
+        <servlet-class>com.neuq.services.WorkerExsit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WorkerExsit</servlet-name>
+        <url-pattern>/WorkerExsit</url-pattern>
+    </servlet-mapping>
+      <!-- 申请细节配置 -->
+  <servlet>
+    <servlet-name>ApplyDetail</servlet-name>
+    <servlet-class>com.neuq.services.ApplyDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectAllManager</servlet-name>
+    <servlet-class>com.neuq.services.SelectAllManager</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>ApplyDetail</servlet-name>
+    <url-pattern>/ApplyDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectAllManager</servlet-name>
+    <url-pattern>/SelectAllManager</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
